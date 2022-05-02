@@ -1,0 +1,31 @@
+{
+    "breakfast": [
+        {"name": "Americano", "price": 5.00},
+        {"name": "Café au lait", "price": 7.00},
+        {"name": "Cheese and Ham Sandwich", "price": 10.00},
+        {"name": "Fruit Juice", "price": 7.00}
+    ],
+
+    "burgers": [
+        {"name": "Simple Meat Burger", "price": 10.00},
+        {"name": "Simple Chicken Burger", "price": 10.00},
+        {"name": "Simple Veggie Burger", "price": 10.00},
+        {"name": "Double Meat Burger", "price": 15.00},
+        {"name": "Double Chicken Burger", "price": 15.00},
+        {"name": "Double Veggie Burger", "price": 15.00},
+        {"name": "Add Cheese", "price": 1.00},
+        {"name": "Add Egg", "price": 1.00}
+    ],
+
+    "sides": [
+        {"name": "French Fries", "price": 5.00},
+        {"name": "Onion Rings", "price": 5.00}
+    ],
+
+    "beverages": [
+        {"name": "Water 500ml", "price": 5.00},
+        {"name": "Water 750ml", "price": 7.00},
+        {"name": "Soda 500ml", "price": 7.00},
+        {"name": "Soda 750ml", "price": 10.00}
+    ]
+}
