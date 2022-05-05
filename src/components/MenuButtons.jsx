@@ -1,12 +1,10 @@
-import React from 'react'
+import { NavLink } from "react-router-dom"
 
 const MenuButtons = () => {
   return (
     <div className='menuButtonContainer'>
-        <button className='buttonMenu'>Breakfast</button>
-        <button className='buttonMenu'>Burgers</button>
-        <button className='buttonMenu'>Sides</button>
-        <button className='buttonMenu'>Beverages</button>
+        <NavLink className={({isActive}) => isActive ? 'active' : 'normal' } to='/breakfast'>Breakfast</NavLink>
+        <NavLink className={({isActive}) => isActive ? 'active' : 'normal' }to='/lunch'>Lunch</NavLink>
     </div>
   )
 }

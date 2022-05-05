@@ -1,10 +1,10 @@
-import React from 'react'
+import { Link } from "react-router-dom"
 
 const Startbuttons = () => {
   return (
     <div className='buttons'>
-        <button className='waiter'>Waiter</button>
-        <button className='kitchen'>Kitchen</button>
+        <Link to="/breakfast" className='waiter'>Waiter</Link>
+        <Link to="/kitchen" className='kitchen'>Kitchen</Link>
     </div>
   )
 }

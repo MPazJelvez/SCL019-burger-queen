@@ -1,0 +1,32 @@
+{
+    "name": "menu",
+    "breakfast": [
+        {"id":"1", "name": "Americano", "price": 5.00},
+        {"id":"2", "name": "Café au lait", "price": 7.00},
+        {"id":"3", "name": "Cheese and Ham Sandwich", "price": 10.00},
+        {"id":"4", "name": "Fruit Juice", "price": 7.00}
+    ],
+
+    "burgers": [
+        {"id":"5", "name": "Simple Meat Burger", "price": 10.00},
+        {"id":"6", "name": "Simple Chicken Burger", "price": 10.00},
+        {"id":"7", "name": "Simple Veggie Burger", "price": 10.00},
+        {"id":"8", "name": "Double Meat Burger", "price": 15.00},
+        {"id":"9", "name": "Double Chicken Burger", "price": 15.00},
+        {"id":"10", "name": "Double Veggie Burger", "price": 15.00},
+        {"id":"11", "name": "Add Cheese", "price": 1.00},
+        {"id":"12", "name": "Add Egg", "price": 1.00}
+    ],
+
+    "sides": [
+        {"id":"13", "name": "French Fries", "price": 5.00},
+        {"id":"14", "name": "Onion Rings", "price": 5.00}
+    ],
+
+    "beverages": [
+        {"id":"15", "name": "Water 500ml", "price": 5.00},
+        {"id":"16", "name": "Water 750ml", "price": 7.00},
+        {"id":"17", "name": "Soda 500ml", "price": 7.00},
+        {"id":"18", "name": "Soda 750ml", "price": 10.00}
+    ]
+}

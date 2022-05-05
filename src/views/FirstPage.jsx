@@ -1,6 +1,6 @@
 import React from 'react'
-import Logoinicio from './Logoinicio'
-import Startbuttons from './Startbuttons'
+import Logoinicio from '../components/Logoinicio'
+import Startbuttons from '../components/Startbuttons'
 
 const FirstPage = () => {
   return (
