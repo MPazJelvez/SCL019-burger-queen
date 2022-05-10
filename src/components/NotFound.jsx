@@ -1,7 +1,8 @@
+import notFound from '../components/img/notFound.png'
 export default function NotFound() {
   return (
     <div>
-        404
-        Not Found</div>
+        <img src= { notFound } alt="404 Not Found"  className='notFound'/>
+    </div>
   )
 }

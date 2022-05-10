@@ -106,11 +106,17 @@ border-radius: 20px;
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 700;
-font-size: 32px;
+font-size: 28px;
 line-height: 40px;
 text-align: center;
 display: block;
 margin: auto;
+bottom: auto;
+}
+
+.rightSide {
+  display: flex;
+  flex-direction: column;
 }
 
 .menuButtonContainer {
@@ -160,22 +166,106 @@ text-decoration: none;
   text-decoration: none;
   }
 
-.buttonMenuSelected {
-  background: #FCE38A;
-  border: 5px solid #9D91B9;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border-radius: 20px;
-  width: 256px;
-  height: 52px;
-  left: 36px;
-  top: 124px;
-  font-family: 'Quicksand';
-  font-style: normal; 
-  font-weight: 700;
-  font-size: 30px;
-  line-height: 38px;
-  text-align: center;
-  color: #F38181;
-  margin: auto;
-  margin-top: 20px;
+
+  .box {
+    width:600px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 2rem;
+
   }
+
+  .btn {
+width: 143px;
+height: 88px;
+margin-top: 10px;
+font-family: 'Quicksand';
+font-style: bold;
+font-weight: 400;
+font-size: 15px;
+line-height: 25px;
+text-align: center;
+background: #95E1D3;
+border: 5px solid #9D91B9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+cursor: pointer;
+  }
+
+  .notFound {
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+  }
+
+  .back {
+width: 152px;
+height: 35px;
+text-decoration: none;
+background: #F38181;
+border: 5px solid #9D91B9;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 30px;
+text-align: center;
+color: #EAFFD0;
+margin-bottom: 0;;
+  }
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 1rem;
+}
+
+.col-1 {
+  flex: 1;
+
+}
+.col-2 {
+  flex: 2;
+}
+
+button.add {
+  background-color: #95E1D3;
+  width: 1.5rem;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: #FFFFFF;
+}
+
+button.remove {
+  background-color: #F38181;
+  width: 1.5rem;
+  font-size: 0.8rem;
+  padding: 0.2rem;
+  margin: 0.1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: #FFFFFF;
+}
+
+text-right {
+  text-align: right;
+}
+
+.cart {
+  font-size: 20px;
+}
+
+.cartTotal {
+  font-size: 25px;
+}
+
+.order {
+  margin: 1rem
+}
+
