@@ -221,6 +221,8 @@ margin-bottom: 0;;
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
+  overflow: scroll;
+  max-height: 10rem;
 }
 
 .col-1 {
@@ -272,6 +274,9 @@ text-right {
 .ordersContainer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  overflow:scroll;
+  max-height: 30rem;
 }
 
 .orderKitchen {
@@ -281,10 +286,12 @@ text-right {
   margin: 0.5rem;
   border-radius: 0.5rem;
   flex: 2;
+  min-width: 15rem;
   max-width: 15rem;
-  font-size: 20px;
+  font-size: 15px;
   font-style: normal;
   font-weight: 700;
+  justify-content: space-between;
 }
 
 .btnReady {

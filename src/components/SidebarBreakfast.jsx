@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { db } from '../firebase - config.js'
-import {collection, addDoc } from 'firebase/firestore'
+import {collection, addDoc, Timestamp } from 'firebase/firestore'
 
 const SidebarBreakfast = (props) => {
   const {cartItems, onAdd, onRemove} = props;
@@ -13,7 +13,13 @@ const SidebarBreakfast = (props) => {
 
   const createOrder = async () => {
     console.log('creado')
-    await addDoc(userCollectionRef, {Customer: newName, order: cartItems})
+    await addDoc(userCollectionRef, {
+      Customer: newName, 
+      Order: cartItems, 
+      status:"Pending",
+      created: Timestamp.now()
+    })
+    console.log()
   }
 
   
