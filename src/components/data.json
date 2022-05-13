@@ -8,12 +8,12 @@
     ],
 
     "lunch": [
-        {"id":"5", "name": "S Meat Burger", "price": 10.00},
-        {"id":"6", "name": "S Chicken Burger", "price": 10.00},
-        {"id":"7", "name": "S Veggie Burger", "price": 10.00},
-        {"id":"8", "name": "D Meat Burger", "price": 15.00},
-        {"id":"9", "name": "D Chicken Burger", "price": 15.00},
-        {"id":"10", "name": "D Veggie Burger", "price": 15.00},
+        {"id":"5", "name": "Simple Meat Burger", "price": 10.00},
+        {"id":"6", "name": "Simple Chicken Burger", "price": 10.00},
+        {"id":"7", "name": "Simple Veggie Burger", "price": 10.00},
+        {"id":"8", "name": "Double Meat Burger", "price": 15.00},
+        {"id":"9", "name": "Double Chicken Burger", "price": 15.00},
+        {"id":"10", "name": "Double Veggie Burger", "price": 15.00},
         {"id":"11", "name": "Add Cheese", "price": 1.00},
         {"id":"12", "name": "Add Egg", "price": 1.00},
         {"id":"13", "name": "French Fries", "price": 5.00},
