@@ -221,9 +221,7 @@ margin-bottom: 0;;
   display: flex;
   justify-content: space-between;
   margin-left: 1rem;
-  overflow: scroll;
-  max-height: 10rem;
-}
+  }
 
 .col-1 {
   flex: 1;
@@ -260,7 +258,7 @@ text-right {
 }
 
 .cart {
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .cartTotal {
@@ -269,6 +267,11 @@ text-right {
 
 .order {
   margin: 1rem
+}
+
+.containerOrderWaiter {
+  overflow: scroll;
+  max-height: 22rem;
 }
 
 .ordersContainer {

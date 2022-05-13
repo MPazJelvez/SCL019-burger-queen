@@ -16,7 +16,7 @@ export default function Kitchen() {
 
     getOrders();
   }, []);
-console.log(orders)
+  console.log(orders);
   return (
     <div>
       <header className="menuUp">
@@ -24,21 +24,28 @@ console.log(orders)
         <h1 className="menuKitchen">Kitchen</h1>
       </header>
       <div className="ordersContainer">
-       { orders.length !== 0 &&
+        {orders.length !== 0 &&
           orders.map((order) => {
-          return (
-            <div className="orderKitchen">
-              <p> Customer: {order.Customer} </p>
-               {order.Order.map((element) => {
-                return <ul> <li>{element.qty} {element.name}</li></ul>
-              })}
-              <p>Status: {order.status}</p>
-              <button type="button" className="btnReady">
-                Ready to serve
-              </button>
-            </div>
-          );
-        })}
+            return (
+              <div className="orderKitchen">
+                <p> Customer: {order.Customer} </p>
+                {order.Order.map((element) => {
+                  return (
+                    <ul>
+                      {" "}
+                      <li>
+                        {element.qty} {element.name}
+                      </li>
+                    </ul>
+                  );
+                })}
+                <p>Status: {order.status}</p>
+                <button type="button" className="btnReady">
+                  Ready to serve
+                </button>
+              </div>
+            );
+          })}
       </div>
 
       <Link to="/" className="back">
