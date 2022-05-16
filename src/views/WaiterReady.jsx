@@ -10,18 +10,19 @@ export default function Kitchen() {
 
   const updateOrder = async (id, status) => {
     const orderDoc = doc(db, "orders", id);
-    const newFields = { status: "Ready" };
+    const newFields = { status: "Delivered" };
     await updateDoc(orderDoc, newFields);
-  console.log(newFields);
+    console.log(newFields);
   };
-useEffect(() => {
-  const q = query(ordersCollectionRef, orderBy("created", "desc"));
 
-const getOrders = onSnapshot(q,(snapshot) =>
-setOrders(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-);
-return getOrders
-}, []);
+  useEffect(() => {
+    const q = query(ordersCollectionRef, orderBy("created", "desc"));
+  
+  const getOrders = onSnapshot(q,(snapshot) =>
+  setOrders(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+  );
+  return getOrders
+  }, []);
 
   // useEffect(() => {
   //   const getOrders = async () => {
@@ -37,7 +38,7 @@ return getOrders
     <div>
       <header className="menuUp">
         <SmallLogo />
-        <h1 className="menuKitchen">Kitchen</h1>
+        <h1 className="menuKitchen">Orders ready to serve</h1>
       </header>
       <div className="ordersContainer">
         {orders.length !== 0 &&
@@ -63,17 +64,16 @@ return getOrders
                     updateOrder(order.id, order.status);
                   }}
                 >
-                  Ready to serve
+                  Delivered
                 </button>
               </div>
             );
           })}
       </div>
-|     <div className="back">
-      <Link to="/" className="returnbtn">
+
+      <Link to="/" className="back">
         Return
       </Link>
-      </div>
     </div>
   );
 }

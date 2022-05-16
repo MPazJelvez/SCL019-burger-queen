@@ -55,7 +55,11 @@ export default function WaiterLunch() {
         })}
         </div>
         <Link to="/" className='back'>Return</Link>
+        <Link to="/orders" className="ordersBtn">
+          Orders
+        </Link>
         </div>
+        
         <div className='sideBar'>
             <SidebarLunch
             onAdd={onAdd}
