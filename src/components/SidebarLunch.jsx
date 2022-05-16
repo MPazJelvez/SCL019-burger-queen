@@ -34,7 +34,7 @@ const SidebarLunch = (props) => {
       />
       <h2 className="order">Order:</h2>
       <div className="containerOrderWaiter">
-        <div>{cartItems.length === 0 && <div> Cart is Empty </div>}</div>
+        <div>{cartItems.length === 0 && <div className="cartEmpty"> Cart is Empty </div>}</div>
         {cartItems.map((item) => (
           <div key={item.id} className="row">
             <div className="col-2 cart">{item.name}</div>
