@@ -70,10 +70,11 @@ export default function Kitchen() {
             );
           })}
       </div>
-
-      <Link to="/" className="back">
+      <div className="back ready">    
+      <Link to="/" className="returnbtn">
         Return
       </Link>
+      </div>
     </div>
   );
 }

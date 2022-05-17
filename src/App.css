@@ -100,7 +100,7 @@ line-height: 40px;
 margin: auto;
 margin-top: 20px;
 display: block;
-
+width: 90%;
 }
 
 .sendOrder {
@@ -140,7 +140,7 @@ border-radius: 20px;
 width: 256px;
 height: 52px;
 left: 36px;
-top: 124px;
+top: 100px;
 font-family: 'Quicksand';
 font-style: normal;
 font-weight: 700;
@@ -149,7 +149,7 @@ line-height: 38px;
 text-align: center;
 color: #F38181;
 margin: auto;
-margin-top: 20px;
+margin-top: 10px;
 text-decoration: none;
 }
 
@@ -161,7 +161,7 @@ text-decoration: none;
   width: 256px;
   height: 52px;
   left: 36px;
-  top: 124px;
+  top: 100px;
   font-family: 'Quicksand';
   font-style: normal;
   font-weight: 700;
@@ -170,7 +170,7 @@ text-decoration: none;
   text-align: center;
   color: #F38181;
   margin: auto;
-  margin-top: 20px;
+  margin-top: 10px;
   text-decoration: none;
   }
 
@@ -190,7 +190,7 @@ height: 88px;
 margin-top: 10px;
 font-family: 'Quicksand';
 font-style: bold;
-font-weight: 400;
+font-weight: 700;
 font-size: 15px;
 line-height: 25px;
 text-align: center;
@@ -222,7 +222,6 @@ font-size: 24px;
 line-height: 30px;
 text-align: center;
 color: #EAFFD0;
-margin-bottom: 0;
 margin-left: 2rem;
 }
 
@@ -268,6 +267,7 @@ text-right {
 
 .cart {
   font-size: 15px;
+  font-weight: 700;
 }
 
 .cartTotal {
@@ -322,7 +322,6 @@ font-size: 20px;
 line-height: 40px;
 text-align: center;
 display: block;
-margin: auto;
 }
 
 .ordersBtn {
@@ -339,7 +338,7 @@ font-weight: 700;
 font-size: 24px;
 line-height: 30px;
 text-align: center;
-color: #EAFFD0;
+color: #9D91B9;
 margin-bottom: 0;
 margin-left: 2rem;
 margin-top: 0.5rem;
@@ -348,4 +347,25 @@ margin-top: 0.5rem;
 .returnbtn {
   text-decoration: none;
   color: #EAFFD0;
+}
+
+.ready {
+  margin-top: 3rem;
+}
+
+.activebtn {
+  width: auto;
+height: 540x;
+background: #FCE38A;
+border: 5px solid #F38181;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 20px;
+font-family: 'Quicksand';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 40px;
+text-align: center;
+display: block;
+margin: auto;
 }
