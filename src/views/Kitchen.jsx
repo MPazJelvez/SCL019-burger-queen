@@ -1,7 +1,14 @@
 import SmallLogo from "../components/SmallLogo.jsx";
 import { Link } from "react-router-dom";
 import { db } from "../firebase - config.js";
-import { collection, updateDoc, doc, orderBy, onSnapshot, query } from "firebase/firestore";
+import {
+  collection,
+  updateDoc,
+  doc,
+  orderBy,
+  onSnapshot,
+  query,
+} from "firebase/firestore";
 import { useState, useEffect } from "react";
 
 export default function Kitchen() {
@@ -12,16 +19,17 @@ export default function Kitchen() {
     const orderDoc = doc(db, "orders", id);
     const newFields = { status: "Ready" };
     await updateDoc(orderDoc, newFields);
-  console.log(newFields);
+    console.log(newFields);
   };
-useEffect(() => {
-  const q = query(ordersCollectionRef, orderBy("created", "desc"));
 
-const getOrders = onSnapshot(q,(snapshot) =>
-setOrders(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-);
-return getOrders
-}, []);
+  useEffect(() => {
+    const q = query(ordersCollectionRef, orderBy("created", "desc"));
+
+    const getOrders = onSnapshot(q, (snapshot) =>
+      setOrders(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
+    );
+    return getOrders;
+  }, []);
 
   // useEffect(() => {
   //   const getOrders = async () => {
@@ -58,7 +66,7 @@ return getOrders
                 <p>Status: {order.status}</p>
                 <button
                   type="button"
-                  className="btnReady"
+                  className={"btnReady"}
                   onClick={() => {
                     updateOrder(order.id, order.status);
                   }}
@@ -69,10 +77,11 @@ return getOrders
             );
           })}
       </div>
-|     <div className="back">
-      <Link to="/" className="returnbtn">
-        Return
-      </Link>
+      |{" "}
+      <div className="back ready">
+        <Link to="/" className="returnbtn">
+          Return
+        </Link>
       </div>
     </div>
   );

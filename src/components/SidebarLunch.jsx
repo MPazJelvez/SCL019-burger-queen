@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { db } from "../firebase - config.js";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
+
 
 const SidebarLunch = (props) => {
   const { cartItems, onAdd, onRemove } = props;
@@ -17,9 +20,16 @@ const SidebarLunch = (props) => {
       Customer: newName,
       Order: cartItems,
       status: "Pending",
-      created: Timestamp.now(),
+      created: Timestamp.fromDate(new Date()),
     });
     console.log();
+    const MySwal = withReactContent(Swal);
+
+    await MySwal.fire({
+      title: <strong>Good job!</strong>,
+      html: <i>Order sent to Kitchen!!</i>,
+      icon: "success",
+    });
   };
 
   return (

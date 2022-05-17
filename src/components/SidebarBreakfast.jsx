@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { db } from "../firebase - config.js";
 import { collection, addDoc, Timestamp } from "firebase/firestore";
+import Swal from "sweetalert2";
+import withReactContent from "sweetalert2-react-content";
 
 const SidebarBreakfast = (props) => {
   const { cartItems, onAdd, onRemove } = props;
@@ -17,9 +19,16 @@ const SidebarBreakfast = (props) => {
       Customer: newName,
       Order: cartItems,
       status: "Pending",
-      created: Timestamp.fromDate(new Date())
+      created: Timestamp.fromDate(new Date()),
     });
     console.log();
+    const MySwal = withReactContent(Swal);
+
+    await MySwal.fire({
+      title: <strong>Good job!</strong>,
+      html: <i>Order sent to Kitchen!!</i>,
+      icon: "success",
+    });
   };
 
   return (
@@ -33,7 +42,11 @@ const SidebarBreakfast = (props) => {
         }}
       />
       <h2 className="order">Order:</h2>
-      <div>{cartItems.length === 0 && <div className="cartEmpty"> Cart is Empty </div>}</div>
+      <div>
+        {cartItems.length === 0 && (
+          <div className="cartEmpty"> Cart is Empty </div>
+        )}
+      </div>
       {cartItems.map((item) => (
         <div key={item.id} className="row">
           <div className="col-2 cart">{item.name}</div>
@@ -71,7 +84,10 @@ const SidebarBreakfast = (props) => {
           </div>
         </>
       )}
-      <button className="sendOrder" onClick={createOrder}>
+      <button
+        className="sendOrder"
+        onClick={createOrder}
+      >
         Send Order to Kitchen
       </button>
     </aside>
