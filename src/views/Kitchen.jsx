@@ -13,7 +13,7 @@ import { useState, useEffect } from "react";
 
 export default function Kitchen() {
   const [orders, setOrders] = useState([]);
-  const ordersCollectionRef = collection(db, "orders");
+  
 
   const updateOrder = async (id, status) => {
     const orderDoc = doc(db, "orders", id);
@@ -23,13 +23,14 @@ export default function Kitchen() {
   };
 
   useEffect(() => {
+    const ordersCollectionRef = collection(db, "orders");
     const q = query(ordersCollectionRef, orderBy("created", "desc"));
 
     const getOrders = onSnapshot(q, (snapshot) =>
       setOrders(snapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id })))
-    );
+    ); 
     return getOrders;
-  }, []);
+  }, []) 
 
   // useEffect(() => {
   //   const getOrders = async () => {

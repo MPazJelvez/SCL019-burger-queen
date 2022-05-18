@@ -21,6 +21,7 @@
         {"id":"15", "name": "Water 500ml", "price": 5.00},
         {"id":"16", "name": "Water 750ml", "price": 7.00},
         {"id":"17", "name": "Soda 500ml", "price": 7.00},
-        {"id":"18", "name": "Soda 750ml", "price": 10.00}
+        {"id":"18", "name": "Soda 750ml", "price": 10.00},
+        {"id":"19", "name": "Happy Queen Box", "price": 12.00}
     ]
 }
