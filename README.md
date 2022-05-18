@@ -10,12 +10,13 @@ Para hacer un pedido en Burger Queen, sólo acércate a uno de los meseros ¡y e
 ¡Visítanos a culquier hora, porque Burger Queen atiende las 24 horas!
 
 Nuestro horario:
- *_Desayuno_: Disponible de 5:00 a 11:00
- *_Almuerzo_: Disponible de 11:00 a 5:00.
+
+ * _Desayuno_: Disponible de 5:00 a 11:00
+ * _Almuerzo_: Disponible de 11:00 a 5:00.
 
 <img src="./src/components/img/restaurant.png" width="500"/>
 
-#### Pero... ¿Qué es la aplicación Burger Queen?
+### Pero... ¿Qué es la aplicación Burger Queen?
 
 ### 1. Presentación del proyecto:
 
@@ -39,6 +40,8 @@ Al hacer click en "Send order to Kitchen", el pedido se envía a cocina.
 También existe el botón "Return", que nos lleva a la vista de inicio, y el botón "Orders" que nos lleva a la vista de pedidos.
 
 <img src="./src/components/img/vistaWaiterBreakfast.jpg" width="500"/>
+
+<img src="./src/components/img/vistaWaiterBreakfastModal.jpg" width="500"/>
 
 Al seleccionar "Lunch" (almuerzo) podemos ver las opciones de platos, agregados y bebestibles disponibles. Esta página funciona igual que la anterior. Cuando el carrito no tiene elementos, muestra el texto "Cart is empty" (El carrito está vacío).
 

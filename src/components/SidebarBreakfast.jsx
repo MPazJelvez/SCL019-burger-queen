@@ -21,7 +21,7 @@ const SidebarBreakfast = (props) => {
       status: "Pending",
       created: Timestamp.fromDate(new Date()),
     });
-    console.log();
+    // console.log();
     const MySwal = withReactContent(Swal);
 
     await MySwal.fire({
