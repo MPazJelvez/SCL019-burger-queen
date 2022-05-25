@@ -26,7 +26,7 @@ Nuestro horario:
 
 ### 1. Presentación del proyecto
 
- Burger Queen es una interfaz para poder organizar los pedidos del restaurant entre los meseros y la cocina
+ La principal problemática del restaurant es la falta de organización entre los meseros y la cocina. El principal objetivo de esta aplicación es solucionar esto y que los pedidos puedan ser entregados sin demoras ni confusiones.
 
 
 ### 2. Interfaz de la Aplicación
