@@ -26,12 +26,12 @@ Nuestro horario:
 
 ### 1. Presentación del proyecto
 
- La principal problemática del restaurant es la falta de organización entre los meseros y la cocina. El principal objetivo de esta aplicación es solucionar esto y que los pedidos puedan ser entregados sin demoras ni confusiones.
+ La principal problemática del restaurant es la falta de organización entre los meseros y la cocina. El objetivo de esta aplicación es solucionar esto y que los pedidos puedan ser entregados sin demoras ni confusiones.
 
 
 ### 2. Interfaz de la Aplicación
 
-La aplicación está diseñada para ser usada en una tablet en modo horizontal como se puede ver en el mockup y en las fotografías de una tablet con la aplicación funcional.
+La aplicación está diseñada para ser usada en una tablet en modo horizontal, tal como se puede observar en el mockup y en las fotografías de una tablet con la aplicación funcional.
 
 <img src="./src/components/img/mockup.png" width="250"/>
 <img src="./src/components/img/foto1.jpeg" width="250"/>
@@ -41,7 +41,7 @@ Al ingresar a nuestra aplicación, se puede escoger entre "Mesero" y "Cocina" (w
 
 <img src="./src/components/img/vistaWaiterKitchen.png" width="500"/>
 
-Al ingresar a la vista de "waiter"(mesero), se desplegará la vista de mesero, que tiene dos tipos de menú: **_desayuno_** y **_almuerzo_** que corresponden a los horarios establecidos por el restaurant.
+Al ingresar a la vista de "waiter"(mesero), se desplegará la vista de mesero, que tiene dos tipos de menú: **_desayuno_** y **_almuerzo_**, que corresponden a los horarios establecidos por el restaurant.
 
 Al seleccionar _breakfast_(desayuno), tenemos las opciones del mismo. En ella podemos elegir y hacer click elementos para agregarlos al carrito. También podemos aumentar o disminuir su cantidad dando click a los símbolos de + y - que están en el carrito.
 Podemos agregar un nombre al cliente, para poder identificarlo al momento de entregar su pedido.
@@ -65,7 +65,7 @@ El chef prepara el pedido y puede cambiar su estado a _"ready"_ haciéndole clic
 
 <img src="./src/components/img/pedidoready.jpg" width="200"/>
 
-El mesero por su parte puede ver los pedidos listos para servir. Al darle click al botón puede marcar el pedido como entregado.
+El mesero, por su parte, puede ver los pedidos listos para servir. Al darle click al botón puede marcar el pedido como entregado.
 
 <img src="./src/components/img/waiterOrders.jpg" width="500"/>
 
@@ -91,7 +91,7 @@ Se creó un prototipo de alta fidelidad en Figma:
 
 ### 4. Historias de Usuario
 
-#### Historia de Usuario 1
+### Historia de Usuario 1
 **_Mesero/a debe poder tomar pedido de cliente_**
 _"Yo como meserx quiero tomar el pedido de un cliente para no depender de mi mala memoria, para saber cuánto cobrar, y enviarlo a la cocina para evitar errores y que se puedan ir preparando en orden."_
 
@@ -104,7 +104,7 @@ _"Yo como meserx quiero tomar el pedido de un cliente para no depender de mi mal
 * Enviar pedido a cocina (guardar en alguna base de datos).
 * Se ve y funciona bien en una tablet
 
-#### Historia de Usuario 2
+### Historia de Usuario 2
 
 **_Jefe de cocina debe ver los pedidos_**
 
@@ -115,7 +115,7 @@ _"Yo como jefx de cocina quiero ver los pedidos de los clientes en orden y marca
 * Ver los pedidos ordenados según se van haciendo.
 * Marcar los pedidos que se han preparado y están listos para servirse.
 
-#### Historia de Usuario 3
+### Historia de Usuario 3
 
 **_Meserx debe ver pedidos listos para servir_**
 
