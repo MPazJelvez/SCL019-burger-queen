@@ -6,8 +6,8 @@
   - [2. Interfaz de la Aplicación](#2-interfaz-de-la-aplicación)
   - [3. Prototipo de Alta Fidelidad](#3-prototipo-de-alta-fidelidad)
   - [4. Historias de Usuario](#4-historias-de-usuario)
+  - [5. ¡Prueba Burger Queen!](#5-prueba-burger-queen)
 
-<!-- ![ESPAÑOL](https://img.icons8.com/color/48/000000/spain-2.png) -->
 ## BIENVENID@S AL RESTAURANT BURGER QUEEN
 
 Burger Queen es un restaurant de hamburguesas familiar. Acá son bienvenidos niños, ancianos, jóvenes y adultos. También puedes traer a tu mascota, porque somos Pet Friendly!
@@ -31,7 +31,7 @@ Nuestro horario:
 
 ### 2. Interfaz de la Aplicación
 
-La aplicación está diseñada para ser usada en una tablet en modo horizontaltal como se puede ver en el mockup y en las fotografías de una tablet con la aplicación funcional.
+La aplicación está diseñada para ser usada en una tablet en modo horizontal como se puede ver en el mockup y en las fotografías de una tablet con la aplicación funcional.
 
 <img src="./src/components/img/mockup.png" width="250"/>
 <img src="./src/components/img/foto1.jpeg" width="250"/>
@@ -131,6 +131,3 @@ _"Yo como meserx quiero ver los pedidos que están preparados para entregarlos r
 Puedes utilizar la app visitando este [Link](https://burgerqueenmpjh.netlify.app/)
 **¡Buen provecho!**
 
-<!-- ![ENGLISH](https://img.icons8.com/color/48/000000/great-britain.png)
-
-## WELCOME TO BURGER QUEEN RESTAURANT -->
